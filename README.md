@@ -91,3 +91,28 @@ fullname1 == fullname2 #compare
 
 # Entity
 ## What's entity?
+- Domain object but different from object value. The difference is if it is identified with ID or not.
+
+## Nature of Entity
+- Mutable
+    - For example user infomation may be modified in the future.
+- Distinguished if both have the same attributes
+- Distinguished with ID
+
+## Why domain objects?
+- Enhance readability of codes
+- Easier to communicate modification in codes
+
+# Domain service
+## What's service?
+- Service is everything that serve anyway for clients
+- In DDD context, service is defined as 
+    1. Service for domain = Domain service
+    2. Service for app = Application service
+
+## What's domain service?
+- Domain service is an object that resolve problems that can't be "naturally" resolved by value objects or entity.
+
+## Risk of Domain service
+- Don't use domain service as much as possible if it can be defined within value object or entity. Because it will reduce understandability of them.
+
